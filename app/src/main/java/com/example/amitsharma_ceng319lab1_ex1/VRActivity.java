@@ -13,28 +13,30 @@ public class VRActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_v_r);
 
-        TextView textView = findViewById(R.id.tvStatus);
-        textView.append("\nonCreate executed");
+        setStatus("onCreate executed");
     }
 
     public void onStart()
     {
         super.onStart();
-        TextView textView = findViewById(R.id.tvStatus);
-        textView.append("\nonStart executed");
+        setStatus("onStart executed");
     }
 
     public void onStop()
     {
         super.onStop();
-        TextView textView = findViewById(R.id.tvStatus);
-        textView.append("\nonStop executed");
+        setStatus("onStop executed");
     }
 
     public void onDestroy()
     {
         super.onDestroy();
+        setStatus("onDestroy executed");
+    }
+
+    public void setStatus(String status)
+    {
         TextView textView = findViewById(R.id.tvStatus);
-        textView.append("\nonDestroy executed");
+        textView.append("\n" + status);
     }
 }
