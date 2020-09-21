@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_main_tv_title"
+        android:textColor="@color/colorGrey"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <fragment android:name="com.example.amitsharma_ceng319lab1_ex1.TopFragment"
+        android:id="@+id/a_main_fragment_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        tools:layout="@layout/fragment_top" />
+
+    <fragment android:name="com.example.amitsharma_ceng319lab1_ex1.BottomFragment"
+        android:id="@+id/a_main_fragment_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        tools:layout="@layout/fragment_bottom" />
+</LinearLayout>
