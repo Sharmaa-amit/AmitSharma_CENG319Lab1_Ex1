@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AmitSharma_CENG319Lab1_Ex1</string>
+    <string name="a_main_tv_title">Démonstration des méthodes du cycle de vie</string>
+    <string name="a_main_tv_status">Activité principale:</string>
+    <string name="a_ai_tv_status">Activité AI:</string>
+    <string name="a_vr_tv_status">Activité VR:</string>
+</resources>
